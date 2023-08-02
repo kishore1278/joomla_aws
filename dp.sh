@@ -16,5 +16,6 @@ sudo apt install apache2 \
                  php-mysql \
                  php-xml \
                  php-zip -y
+sudo apt install php libapache2-mod-php php-mysql php-gd php-xml php-mbstring php-ldap php-curl -y
 systemctl start apache2
 systemctl enable apache2
