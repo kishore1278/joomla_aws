@@ -1,9 +1,7 @@
 #!/bin/bash
 echo "installing dependencies"
 sudo apt update 
-sudo apt install wget apache2 unzip -y
-systemctl start apache2
-systemctl enable apache2
+sudo apt install wget unzip -y
 sudo apt install apache2 \
                  ghostscript \
                  libapache2-mod-php \
@@ -18,3 +16,5 @@ sudo apt install apache2 \
                  php-mysql \
                  php-xml \
                  php-zip -y
+systemctl start apache2
+systemctl enable apache2
